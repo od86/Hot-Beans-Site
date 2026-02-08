@@ -148,13 +148,13 @@ ul > li > a {
 
 #courses {
   width: 100vw;
-  /* background-image: linear-gradient(to bottom right, rgb(0, 0, 153),  rgb(167, 0, 0)); */
-  background-color: rgb(8, 8, 8);
+  background-image: url('/img/backgrounds/northern-lights.jpg');
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 96px;
-  padding: 8% 64px;
+  padding: 10% 64px;
   color: white;
 }
 
@@ -180,12 +180,11 @@ ul > li > a {
   justify-content: space-between;
   gap: 24px;
   border-radius: 10px;
-  background-color: #102538;
+  background-color: #0d2030;
   padding: 32px 16px;
 }
 
 .course-item > h1 {
-  background-color: rgb(0, 65, 90);
   padding: 4px 32px;
   align-self: center;
   text-align: center;
@@ -198,22 +197,10 @@ ul > li > a {
   align-self: center;
 }
 
-.fcc-logo {
-  height: 70px;
-  filter: invert(100%);
-}
-
-.gfg-logo {
-  width: 200px;
-}
-
-.mdn-logo {
-  height: 70px;
-}
-
-.w3-logo {
-  height: 150px;
-}
+.gfg-logo { width: 210px; }
+.mdn-logo, .fcc-logo { height: 70px; }
+.w3-logo { height: 140px; }
+.fcc-logo { filter: invert(100%); }
 
 .course-item-text {
   font-family: 'Courier New', Courier, monospace;
@@ -227,9 +214,80 @@ ul > li > a {
   width: 45%;
   margin-top: 16px;
   text-align: center;
-  background-image: linear-gradient(to bottom right, red, purple, blue);
+  background-image: linear-gradient(to bottom right, red, blue);
   color: white;
   border: 4px solid rgb(8, 8, 8);
   box-shadow: 4px 4px 12px black;
   border-radius: 20px;
+}
+
+#requirements {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 10% 64px;
+  background-color: rgb(12, 12, 12);
+  color: white;
+}
+
+#requirements > h1 {
+  font-size: 3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.requirements-description {
+  max-width: 1000px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.requirements-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 96px;
+  padding: 96px 5%;
+}
+
+.requirement > h2 {
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 12px;
+}
+
+.requirement > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 0px 32px;
+}
+
+.requirement > ul > li {
+  font-size: 1.4rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  display: flex;
+  gap: 8px;
+}
+
+.requirement > ul > li > svg {
+  min-width: 30px;
+  width: 40px;
+  filter: invert(100%);
+}
+
+#employees {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 32px;
+}
+
+#job-application {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(12, 12, 12);
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 32px;
 }
