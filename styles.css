@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  opacity: 85%;
+  backdrop-filter: blur(10px);
+  padding: 24px 0px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  list-style-type: none;
+}
+
+a { 
+  text-decoration: none; 
+}
+
+ul > li > a {
+  font-size: 1.4rem;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar-title {
+  font-size: 2.8rem;
+  color: white;
+  font-family: cursive;
+}
+
+/* Start of index.html stylings */
+#homepage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(216, 216, 216);
+  padding: 0px 64px;
+  background-image: url('img/backgrounds/earth.jpg');
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+#homepage > p { 
+  font-size: 4rem; 
+}
+
+#homepage > p > span { 
+  font-family: cursive;
+  color: #0662b3;
+}
+
+#homepage > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 48px 0px;
+  padding: 8px 32px;
+  color: white;
+  background-color: #173046;
+  border-radius: 10px;
+
+  font-weight: bolder;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#homepage > a > svg {
+  width: 40px;
+  filter: invert(90%);
+}
+
+#about {
+  width: 100vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  padding: 12% 64px;
+}
+
+#about > h1 {
+  font-size: 6rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 90px;
+}
+
+.about-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  max-width: 500px;
+  min-height: 700px;
+}
+
+.about-item > img {
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+.about-item > h2 {
+  margin: 44px 0px 32px 0px;
+  font-size: 2.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about-item > p {
+  font-size: 1.3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.previous-clients-logos {
+  width: 100vw;
+  padding: 24px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+  background-color: rgb(12, 12, 12);
+}
+
+.previous-clients-logos > img {
+  width: 160px;
+}
+
+#courses {
+  width: 100vw;
+  /* background-image: linear-gradient(to bottom right, rgb(0, 0, 153),  rgb(167, 0, 0)); */
+  background-color: rgb(8, 8, 8);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 96px;
+  padding: 8% 64px;
+  color: white;
+}
+
+#courses > h1 {
+  font-size: 6rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  align-self: center;
+}
+
+.courses-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+}
+
+.course-item {
+  min-width: 320px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  border-radius: 10px;
+  background-color: #102538;
+  padding: 32px 16px;
+}
+
+.course-item > h1 {
+  background-color: rgb(0, 65, 90);
+  padding: 4px 32px;
+  align-self: center;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-shadow: 10px;
+  border-radius: 20px;
+}
+
+.course-item > img {
+  align-self: center;
+}
+
+.fcc-logo {
+  height: 70px;
+  filter: invert(100%);
+}
+
+.gfg-logo {
+  width: 200px;
+}
+
+.mdn-logo {
+  height: 70px;
+}
+
+.w3-logo {
+  height: 150px;
+}
+
+.course-item-text {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.course-item-text > a {
+  padding: 16px 8px;
+  width: 45%;
+  margin-top: 16px;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, red, purple, blue);
+  color: white;
+  border: 4px solid rgb(8, 8, 8);
+  box-shadow: 4px 4px 12px black;
+  border-radius: 20px;
+}
