@@ -276,16 +276,66 @@ ul > li > a {
 
 #employees {
   width: 100vw;
-  height: 100vh;
+  background-image: url('img/backgrounds/mountain2.jpg');
+  background-size: 100% 100%;
   background-color: black;
   color: white;
   font-family: 'Courier New', Courier, monospace;
-  padding: 32px;
+  padding: 10% 48px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#employees > h1 {
+  font-size: 6rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.employees-description {
+  max-width: 1000px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.people {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 96px;
+  margin-top: 5%;
+  padding: 16px;
+}
+
+.person {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.person-info > h2 {
+  font-family: cursive;
+  font-size: 2rem;
+}
+
+.person-info {
+  background-color: rgb(19, 19, 19);
+  color: rgb(228, 228, 228);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 240px;
+}
+
+.person > img {
+  width: 240px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 #job-application {
   width: 100vw;
-  height: 100vh;
   background-color: rgb(12, 12, 12);
   color: white;
   font-family: 'Courier New', Courier, monospace;
