@@ -292,45 +292,58 @@
       </div>
     </div>
   </section>
-
-  <!-- Id be cool to make it so that when you click on the phone icon and email icon they 
-   copy them to the clipboard or got to email or some shi -->
+  
   <section id="job-application">
     <h1>Apply for a job</h1>
     <div class="application-form">
       <form action="">
-
+        <input type="text" id="full-name" name="full-name" placeholder="Name" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <textarea name="details" id="details" placeholder="Relevant details..."></textarea>
+        <input type="file" name="file" id="file">
       </form>
 
       <div class="application-description">
         <p>--- DETAILS ---</p>
-        <h2>Apply today</h2>
+        <h2>Apply today.</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt libero iusto quia 
           quo omnis quae tempore mollitia facilis dolor, asperiores veritatis eligendi blanditiis 
           maiores saepe minus ut non perspiciatis molestiae.</p>
         <div class="contact-methods">
-          <!-- SVG here -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>phone-in-talk</title>
+            <path d="M15,12H17A5,5 0 0,0 12,7V9A3,3 0 0,1 15,12M19,12H21C21,7 16.97,3 12,3V5C15.86,5 19,8.13 19,12M20,15.5C18.75,15.5 17.55,15.3 16.43,14.93C16.08,14.82 15.69,14.9 15.41,15.18L13.21,17.38C10.38,15.94 8.06,13.62 6.62,10.79L8.82,8.59C9.1,8.31 9.18,7.92 9.07,7.57C8.7,6.45 8.5,5.25 8.5,4A1,1 0 0,0 7.5,3H4A1,1 0 0,0 3,4A17,17 0 0,0 20,21A1,1 0 0,0 21,20V16.5A1,1 0 0,0 20,15.5Z" />
+          </svg>
           <div class="contact-method-info">
             <p>Phone</p>
             <p>01234 567890</p>
           </div>
         </div>
         <div class="contact-methods">
-          <!-- SVG here -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>email-outline</title>
+            <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z" />
+          </svg>
           <div class="contact-method-info">
             <p>Email</p>
             <p>company@hotbeans.co.uk</p>
           </div>
         </div>
         <div class="contact-methods">
-          <!-- SVG here -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>map-marker-outline</title>
+            <path d="M12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5M12,2A7,7 0 0,1 19,9C19,14.25 12,22 12,22C12,22 5,14.25 5,9A7,7 0 0,1 12,2M12,4A5,5 0 0,0 7,9C7,10 7,12 12,18.71C17,12 17,10 17,9A5,5 0 0,0 12,4Z" />
+          </svg>
           <div class="contact-method-info">
             <p>Address</p>
             <p>EGX, London, England, Britain</p>
           </div>
         </div>
         <div class="contact-methods">
-          <!-- SVG here -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>message-text</title>
+            <path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18" />
+          </svg>
           <div class="contact-method-info">
             <p>Message</p>
             <p>hotbeans.message</p>

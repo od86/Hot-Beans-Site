@@ -339,5 +339,96 @@ ul > li > a {
   background-color: rgb(12, 12, 12);
   color: white;
   font-family: 'Courier New', Courier, monospace;
-  padding: 32px;
+  padding: 10% 48px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 112px;
+}
+
+#job-application > h1 {
+  font-size: 6rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.application-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 300px;
+  width: 516px;
+  min-height: 585px;
+}
+
+input {
+  padding: 24px 32px;
+  font-size: 1.1rem;
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}
+
+form > input:last-child::file-selector-button {
+  border: 1px solid #0662b3;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  margin-right: 16px;
+}
+
+textarea {
+  resize: none;
+  height: 300px;
+  padding: 24px 32px;
+  font-size: 1.1rem;
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}
+
+.application-description {
+  max-width: 516px;
+  min-height: 585px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.application-description > h2 {
+  font-size: 2.6rem;
+  color: #0662b3;
+}
+
+.contact-methods {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-method-info > p:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: cursive;
+}
+
+.contact-method-info > p:last-child {
+  font-size: 0.9rem;
+  color: rgb(179, 179, 179);
+}
+
+.contact-methods > svg {
+  width: 30px;
+  filter: invert(100%);
 }
