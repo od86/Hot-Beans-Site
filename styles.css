@@ -38,7 +38,15 @@ ul > li > a {
   font-family: cursive;
 }
 
-/* Start of index.html stylings */
+ul > li > a:hover {
+  border-bottom: 2px solid #0662b3;
+}
+
+.navbar-title:hover {
+  color: #0662b3;
+  border: none;
+}
+
 #homepage {
   width: 100vw;
   height: 100vh;
@@ -50,11 +58,11 @@ ul > li > a {
   padding: 0px 64px;
   background-image: url('img/backgrounds/earth.jpg');
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 #homepage > p { 
-  font-size: 4rem; 
+  font-size: clamp(3rem, 5vw, 4rem  )
 }
 
 #homepage > p > span { 
@@ -75,7 +83,7 @@ ul > li > a {
 
   font-weight: bolder;
   letter-spacing: 3px;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 5vw, 1.5rem);
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -95,13 +103,13 @@ ul > li > a {
 }
 
 #about > h1 {
-  font-size: 6rem;
+  font-size: clamp(2.8rem, 5vw, 6rem);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .about-item-container {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   flex-wrap: wrap;
   gap: 90px;
@@ -111,23 +119,25 @@ ul > li > a {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  max-width: 500px;
-  min-height: 700px;
+  padding: 8px;
+  flex: 1;
 }
 
 .about-item > img {
-  max-width: 500px;
+  width: clamp(300px, 80vw, 500px);
   border-radius: 20px;
 }
 
 .about-item > h2 {
   margin: 44px 0px 32px 0px;
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
+  font-size: clamp(2rem, 5vw, 2.5rem);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .about-item > p {
-  font-size: 1.3rem;
+  max-width: 600px;
+  font-size: clamp(0.8rem, 5vw, 1.3rem);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -137,7 +147,7 @@ ul > li > a {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 64px;
   align-items: center;
   background-color: rgb(12, 12, 12);
 }
@@ -148,8 +158,8 @@ ul > li > a {
 
 #courses {
   width: 100vw;
-  background-image: url('img/backgrounds/northern-lights.jpg');
-  background-size: 100% 100%;
+  background-image: url('img/backgrounds/mountain1.jpg');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -160,6 +170,7 @@ ul > li > a {
 
 #courses > h1 {
   font-size: 6rem;
+  font-size: clamp(3rem, 5vw, 6rem);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   align-self: center;
 }
@@ -170,6 +181,7 @@ ul > li > a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 48px;
+  padding: 32px;
 }
 
 .course-item {
@@ -214,11 +226,17 @@ ul > li > a {
   width: 45%;
   margin-top: 16px;
   text-align: center;
-  background-image: linear-gradient(to bottom right, red, blue);
+  background-color: #0662b3;
   color: white;
   border: 4px solid rgb(8, 8, 8);
   box-shadow: 4px 4px 12px black;
   border-radius: 20px;
+
+  transition: 0.1s background-color 0.1s;
+}
+
+.course-item-text > a:hover {
+ background-color: #173046;
 }
 
 #requirements {
@@ -231,7 +249,7 @@ ul > li > a {
 }
 
 #requirements > h1 {
-  font-size: 3rem;
+  font-size: clamp(3rem, 5vw, 4rem);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -277,7 +295,7 @@ ul > li > a {
 #employees {
   width: 100vw;
   background-image: url('img/backgrounds/mountain2.jpg');
-  background-size: 100% 100%;
+  background-size: cover;
   background-color: black;
   color: white;
   font-family: 'Courier New', Courier, monospace;
@@ -290,7 +308,8 @@ ul > li > a {
 }
 
 #employees > h1 {
-  font-size: 6rem;
+  font-size: clamp(4rem, 5vw, 6rem);;
+
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -347,7 +366,7 @@ ul > li > a {
 }
 
 #job-application > h1 {
-  font-size: 6rem;
+  font-size: clamp(2.8rem, 5vw, 6rem);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -374,11 +393,17 @@ input {
   border: none;
   color: white;
   border-radius: 8px;
+  border: 2px solid black;
 }
 
-form > input:last-child::file-selector-button {
+input:focus, textarea:focus {
+  outline: none;
+  border: 2px solid #0662b3;
+}
+
+#file::file-selector-button {
   border: 1px solid #0662b3;
-  padding: 8px 16px;
+  padding: 4px 16px;
   border-radius: 8px;
   background-color: black;
   color: white;
@@ -394,6 +419,23 @@ textarea {
   border: none;
   color: white;
   border-radius: 8px;
+  border: 2px solid black;
+}
+
+form > button {
+  padding: 8px 16px;
+  background-color: black;
+  border: none;
+  color: #0662b3;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-family: cursive;
+}
+
+form > button:hover {
+  background-color: #0662b3;
+  color: black;
 }
 
 .application-description {
@@ -431,4 +473,96 @@ textarea {
 .contact-methods > svg {
   width: 30px;
   filter: invert(100%);
+}
+
+#footer {
+  width: 100vw;
+  background-color: rgb(19, 19, 19);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+
+  padding: 2% 0px 4px 0px;
+}
+
+.top-footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.top-footer-section > h2 {
+  font-size: clamp(4rem, 5vw, 4.8rem);
+  font-family: cursive;
+  color: #0662b3;
+}
+
+.top-footer-section > p:nth-child(2) {
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 2px;
+}
+
+.top-footer-section > p:nth-child(3) {
+  max-width: 850px;
+  padding: 0px 8px;
+  color: rgb(224, 224, 224);
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer-links > a {
+  color: white;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-links > a:hover {
+  color: #0662b3;
+}
+
+.bottom-footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+
+  border-top: 3px solid #0662b3;
+  width: 100%;
+  padding: 16px;
+
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bottom-footer-section > p:nth-child(2) {
+  font-size: 2rem;
+  font-family: cursive;
+}
+
+@media (max-width: 1024px) {
+  .navbar > ul > li:nth-child(1),
+  .navbar > ul > li:nth-child(2),
+  .navbar > ul > li:nth-child(4),
+  .navbar > ul > li:nth-child(5) {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .navbar {
+    position: absolute;
+  }
 }
