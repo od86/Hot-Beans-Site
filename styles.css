@@ -35,7 +35,7 @@ ul > li > a {
 .navbar-title {
   font-size: 2.8rem;
   color: white;
-  font-family: cursive;
+  font-family: "Ruthie", cursive;
 }
 
 ul > li > a:hover {
@@ -66,7 +66,7 @@ ul > li > a:hover {
 }
 
 #homepage > p > span { 
-  font-family: cursive;
+  font-family: "Ruthie", cursive;
   color: #0662b3;
 }
 
@@ -109,7 +109,6 @@ ul > li > a:hover {
 
 .about-item-container {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   flex-wrap: wrap;
   gap: 90px;
@@ -130,7 +129,6 @@ ul > li > a:hover {
 
 .about-item > h2 {
   margin: 44px 0px 32px 0px;
-  /* font-size: 2.5rem; */
   font-size: clamp(2rem, 5vw, 2.5rem);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -163,8 +161,8 @@ ul > li > a:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 96px;
-  padding: 10% 64px;
+  gap: 64px;
+  padding: 6% 64px 10% 64px;
   color: white;
 }
 
@@ -334,7 +332,7 @@ ul > li > a:hover {
 }
 
 .person-info > h2 {
-  font-family: cursive;
+  font-family: "Ruthie", cursive;
   font-size: 2rem;
 }
 
@@ -350,7 +348,6 @@ ul > li > a:hover {
 
 .person > img {
   width: 240px;
-  border-radius: 10px 0px 0px 10px;
 }
 
 #job-application {
@@ -358,7 +355,7 @@ ul > li > a:hover {
   background-color: rgb(12, 12, 12);
   color: white;
   font-family: 'Courier New', Courier, monospace;
-  padding: 10% 48px;
+  padding: 6% 48px 18% 48px;
 
   display: flex;
   flex-direction: column;
@@ -430,7 +427,7 @@ form > button {
   border-radius: 8px;
   font-weight: bold;
   font-size: 1.8rem;
-  font-family: cursive;
+  font-family: "Ruthie", cursive;
 }
 
 form > button:hover {
@@ -462,7 +459,7 @@ form > button:hover {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 3px;
-  font-family: cursive;
+  font-family: "Ruthie", cursive;
 }
 
 .contact-method-info > p:last-child {
@@ -498,7 +495,7 @@ form > button:hover {
 
 .top-footer-section > h2 {
   font-size: clamp(4rem, 5vw, 4.8rem);
-  font-family: cursive;
+  font-family: 'Times New Roman', Times, serif;
   color: #0662b3;
 }
 
@@ -549,7 +546,7 @@ form > button:hover {
 
 .bottom-footer-section > p:nth-child(2) {
   font-size: 2rem;
-  font-family: cursive;
+  font-family: "Ruthie", cursive;
 }
 
 @media (max-width: 1024px) {
