@@ -370,7 +370,7 @@ ul > li > a:hover {
 .application-form {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   gap: 64px;
 }
 
@@ -402,7 +402,7 @@ input:focus, textarea:focus {
   border: 1px solid #0662b3;
   padding: 4px 16px;
   border-radius: 8px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
   margin-right: 16px;
 }
@@ -535,7 +535,7 @@ form > button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 8px;
 
   border-top: 3px solid #0662b3;
   width: 100%;
@@ -544,10 +544,10 @@ form > button:hover {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.bottom-footer-section > p:nth-child(2) {
+/* .bottom-footer-section > p:nth-child(2) {
   font-size: 2rem;
   font-family: "Ruthie", cursive;
-}
+} */
 
 @media (max-width: 1024px) {
   .navbar > ul > li:nth-child(1),
