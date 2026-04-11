@@ -48,7 +48,7 @@ ul > li > a:hover {
 }
 
 #homepage {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: flex-start;
@@ -93,7 +93,7 @@ ul > li > a:hover {
 }
 
 #about {
-  width: 100vw;
+  width: 100%;
   background-color: black;
   color: white;
   display: flex;
@@ -140,7 +140,7 @@ ul > li > a:hover {
 }
 
 .previous-clients-logos {
-  width: 100vw;
+  width: 100%;
   padding: 24px;
   display: flex;
   justify-content: space-evenly;
@@ -155,7 +155,7 @@ ul > li > a:hover {
 }
 
 #courses {
-  width: 100vw;
+  width: 100%;
   background-image: url('img/backgrounds/mountain1.jpg');
   background-size: cover;
   display: flex;
@@ -291,7 +291,7 @@ ul > li > a:hover {
 }
 
 #employees {
-  width: 100vw;
+  width: 100%;
   background-image: url('img/backgrounds/mountain2.jpg');
   background-size: cover;
   background-color: black;
@@ -351,7 +351,7 @@ ul > li > a:hover {
 }
 
 #job-application {
-  width: 100vw;
+  width: 100%;
   background-color: rgb(12, 12, 12);
   color: white;
   font-family: 'Courier New', Courier, monospace;
@@ -473,7 +473,7 @@ form > button:hover {
 }
 
 #footer {
-  width: 100vw;
+  width: 100%;
   background-color: rgb(19, 19, 19);
   color: white;
 
