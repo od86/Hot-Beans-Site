@@ -393,10 +393,10 @@ input {
   border: 2px solid black;
 }
 
-input:focus, textarea:focus {
-  outline: none;
-  border: 2px solid #0662b3;
-}
+input:invalid, textarea:invalid { border-color: rgb(122, 0, 0); }
+input:valid, textarea:valid { border-color: rgb(0, 78, 0); }
+input:focus, textarea:focus { outline: none; }
+#file:invalid, #file:valid { border: none;}
 
 #file::file-selector-button {
   border: 1px solid #0662b3;
